@@ -1,0 +1,91 @@
+.navbar 
+{
+    background-color:#0044ff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500; 
+}
+
+.footerstyle
+{
+    
+    background-color:#0044ff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500; 
+    
+}
+.newfont{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500; 
+}
+
+.navbar .container .collapse .navbar-nav .nav-item .nav-link 
+{
+    color:white;
+}
+
+.navbar .container .collapse .navbar-nav .nav-item .nav-link:hover
+{
+    color:#ff6f00;
+    transition: color 0.5s ease-in-out;
+    
+}
+
+#logoimg
+{
+    width:9%;
+}
+
+#logotext
+{
+    color: white;
+}
+
+#banner
+{
+    background-color:#0044ff;
+}
+h1,h2,h3
+{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500; 
+}
+
+#getstartedbtn
+{
+    border: 1px solid #ff6f00;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#getstartedbtn:hover
+{
+    background-color: #ff6f00;
+}
+
+.paragraf{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500; 
+    font-size: 0.9rem;
+    line-height: 24px;
+    text-align: center;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 12.5%;
+    width: 75%;
+    height: 90%;
+}
