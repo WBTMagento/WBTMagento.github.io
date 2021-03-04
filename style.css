@@ -18,12 +18,12 @@
     font-weight: 500; 
 }
 
-.navbar .container .collapse .navbar-nav .nav-item .nav-link 
+ .nav-link 
 {
     color:white;
 }
 
-.navbar .container .collapse .navbar-nav .nav-item .nav-link:hover
+ .nav-link:hover
 {
     color:#ff6f00;
     transition: color 0.5s ease-in-out;
@@ -70,22 +70,95 @@ h1,h2,h3
     text-align: center;
 }
 
-.video-container {
-    overflow: hidden;
-    position: relative;
-    width:100%;
+@media screen and (max-width: 576px) { 
+    .resp
+    {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 991.98px) { 
+    .resp
+    {
+        width: 50%;
+    }
 }
 
-.video-container::after {
-    padding-top: 56.25%;
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(247, 78, 0, 0.897);
+    width: 50px;
+    height: 50px;
     display: block;
-    content: '';
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: #ff6f00;
+    cursor: pointer;
+    
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
 }
 
-.video-container iframe {
-    position: absolute;
+.preloaderBg {
+    position: fixed;
+    z-index: 10; 
     top: 0;
-    left: 12.5%;
-    width: 75%;
-    height: 90%;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
+
+.preloader {
+    margin: auto;
+    background: url(images/logo.png) no-repeat center;
+    background-size: 150px;
+    width: 300px;
+    height: 300px;
+}
+
+
+.preloader2 {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #ff6f00;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  animation: spin 1s ease-in-out infinite ;
+  position: relative;
+  margin: auto;
+  top: -280px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
