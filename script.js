@@ -35,6 +35,7 @@ document.addEventListener(
   );
 
   function hoverinm(){
+    
       $("#p1").css("width","29.1%");
       $("#magprog").css("cursor","pointer");
       $("#pt").css("opacity","1");
@@ -42,6 +43,7 @@ document.addEventListener(
       $("#pt").html("Magento:<br>29.1%");
       $("#p1").css("background-color","#ff6f00");
       $("#pt").css("color","orange");
+     
       
   }
   function hoveroutm(){
