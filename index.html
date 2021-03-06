@@ -17,6 +17,7 @@
 </head>
 
 <body onload="preloader()">
+    <div id="_progress"></div>
     <div class="preloaderBg" id="preloader" >
         <div class="preloader"></div>
         <div class="preloader2"></div>
@@ -28,15 +29,14 @@
             <i class="fa fa-bars" style="color:#fff; font-size:28px;"></i>
         </span>
         </button>
-        <a class="navbar-brand mr-md-auto ml-auto" id="logotext" href="#"><img src="images/logo.png" class="img-fluid"
-            id="logoimg">&nbsp;&nbsp;Magento</a>      
+        <a class="navbar-brand mx-0 my-0" id="logotext" href="#"><img src="images/logo.png" width="30" height="30" alt="">&nbsp;&nbsp;Magento</a>      
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Pocetak <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Početak <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Koriscenje</a>
+              <a class="nav-link" id="navpage2" href="#">Koriscenje</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Koriscenje</a>
@@ -55,26 +55,26 @@
     <div class="jumbotron jumbotron-fluid" id="banner">
         <div class="container">
 
-            <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
+            <img id="bancontent1" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500"
                 src="images/logo.png" class="img-fluid mx-auto d-block">
-            <h1 class="text-center text-light mt-4">Upoznajte Magento</h1>
+            <h1 id="bancontent2" class="text-center text-light mt-4">Upoznajte Magento</h1>
             <button type="button" class="btn btn-outline-primary mx-auto d-block newfont mt-4"
                 id="getstartedbtn">Započnite Korišćenje</button>
         </div>
     </div>
     <div class="container">
         <div class="row mt-0">
-            <div class="col-lg-4 col-md-6 col-sm-12 order-1 " data-aos="fade-up" data-aos-duration="2000">
+            <div class="col-lg-4 col-md-12 col-sm-12 order-1 " data-aos="fade-up" data-aos-duration="2000">
                 <h3 class="text-center">Sta je Magento?</h3>
                 <p class="paragraf text-justify">Magento je CMS sistem otvorenog koda (engl. Open Source) za izradu
                     web-sajtova elekronske trgovine. Magento je originalno razvijen od strane Veriana (engl. Varian,
                     Inc), privatne kompanije smeštene u Kalver Siti-ju u Kaliforniji, uz pomoć volontera.Magento koristi MySQL sistem za upravljanje bazama podataka, „PHP“ programski jezik i elemente „Zend Fremvorka“ (engl. Zend Framework).
                 </p>
             </div>
-            <div class="col-lg-4 col-12 order-2 ">
+            <div class="col-lg-4 col-md-12 col-12 order-2 ">
                 <img class="img-fluid mx-auto d-block  mb-4" src="pozadina.png" alt="">
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 order-3" data-aos="fade-down" data-aos-duration="2000">
+            <div class="col-lg-4 col-md-12 col-sm-12 order-3" data-aos="fade-down" data-aos-duration="2000">
                 <h3 class="text-center">Istorija Magenta</h3>
                 <p class="paragraf text-justify">Verian objavljuje prvu verziju programa 31. marta 2008. godine pod
                     nazivom Bento. Roj Rubin, bivši izvršni direktor Verian kompanije kasnije prodaje značajni udeo
@@ -91,10 +91,33 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
+        <h3 class="text-center my-4">Konkurencija?</h3>
+        <h5 class=" text-center">Statistika nm govori da čak 29.1% online prodavnica koriste Magento. Ali šta je sa konkurencijom?</h5>
+    
+        <div class="row">
+        <div class="col-md-4">
+        <img class="img-fluid mx-auto d-block w-50 my-4 imgs" src="images/logores.png" id="magprog">
+        <h3 class="text-center my-4 d-sm-block d-md-none">Magento:<br>29.1%</h3>
     </div>
+    <div class="col-md-4">
+        <img class="img-fluid mx-auto d-block w-50 my-4 imgm"  src="images/shopify.png" id="sprog">
+        <h3 class="text-center my-4 d-sm-block d-md-none">Shopify:<br>10.9%</h3>
+    </div>
+    <div class="col-md-4">
+        <img class="img-fluid mx-auto d-block w-50 my-4 imgb"  src="images/bcres.jpg" id="bprog">
+        <h3 class="text-center my-4 d-sm-block d-md-none">BigCommerce:<br>9.4%</h3>
+    </div>
+</div>
+        <div class="d-none d-md-flex progress">
+            <div id="p1" class="progress-bar" role="progressbar" style="width: 0%;;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        <h3 id="pt" class="text-center my-4 d-none d-md-block" style="opacity: 0.0;">.</h3>
+
+    </div>
+</div>
     <a id="return-to-top"><i class="fa fa-arrow-up"></i></a>
     <footer>
-        <p class="text-center text-light footerstyle py-4 mt-5 mb-0">Copyright &copy; Suki & Duki</p>
+        <p class="text-center text-light footerstyle py-4 mt-5 mb-0">Copyright &copy; Suki & Duki & Taki</p>
     </footer>
 
 </body>
