@@ -1,77 +1,64 @@
 .navbar 
 {
-      background: #373B44;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0044ff, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0044ff, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500; 
+background: linear-gradient(to right, #0044ff, #373B44); /*pozadina za Navbar*/
+    font-family: 'Quicksand', sans-serif; /*Tip fonta za navbar*/
+    font-weight: 500; /*Debljina Fonta Za Navbar*/
 }
-
 .footerstyle
 {
-    
-    background: #373B44;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0044ff, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0044ff, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500; 
-    
+    background: linear-gradient(to right, #0044ff, #373B44); /*pozadina za Footer*/
+    font-family: 'Quicksand', sans-serif; /*Tip fonta za footer*/
+    font-weight: 500; /*Debljina Fonta Za footer*/
 }
-.newfont{
+.newfont{/*Klasa za promenu fonta na nekim mestima*/
     font-family: 'Quicksand', sans-serif;
     font-weight: 500; 
 }
 
  .nav-link 
 {
-    color:white;
+    color:white;/*Boja linkova u navbaru*/
 }
 
  .nav-link:hover
 {
-    color:#ff6f00;
-    transition: color 0.5s ease-in-out;
-    
+    color:#ff6f00;/*Boja linkova u navbaru kada se predje preko njih*/
+    transition: color 0.5s ease-in-out;/*Promena boje iz bele u narandzastu traje pola sekunde(0.5s)*/
 }
 
 #logoimg
 {
-    width:9%;
+    width:9%/*Sirina logo slike u navbaru - gornji levi ugao*/
 }
 
 #logotext
 {
-    color: white;
+    color: white;/*Boja teksta pored logo-a - gornji levi ugao*/
 }
 
 #banner
 {
-    background: #373B44;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0044ff, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0044ff, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: linear-gradient(to right, #0044ff, #373B44); /*pozadina za Banner*/
 }
-h1,h2,h3,h4,h5
+h1,h2,h3,h4,h5 /*Font za naslove h1-h5 tip i debljina fonta*/
 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500; 
 }
 
-#getstartedbtn
+#getstartedbtn /*Dugme zapocnite koriscenje*/
 {
     border: 1px solid #ff6f00;
-    color: white;
+    
     font-size: 1.3rem;
 }
 
-#getstartedbtn:hover
+#getstartedbtn:hover /*Kada se predje preko dugmeta zapocnite koriscenje postaje narandzasto*/
 {
     background-color: #ff6f00;
 }
 
-.paragraf{
+.paragraf{/*Stil za Paragrafe*/
     font-family: 'Quicksand', sans-serif;
     font-weight: 500; 
     font-size: 0.9rem;
@@ -79,6 +66,11 @@ h1,h2,h3,h4,h5
     text-align: center;
 }
 
+.btnn{
+    border-color: #ff6f00;
+    color: #ff6f00;
+}
+/*Responzivan video*/
 @media screen and (max-width: 576px) { 
     .resp
     {
@@ -91,7 +83,21 @@ h1,h2,h3,h4,h5
         width: 50%;
     }
 }
+/*Responzivan video*/
+@media screen and (max-width: 576px) { 
+    .resp1
+    {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 991.98px) { 
+    .resp1
+    {
+        width: 100%;
+    }
+}
 
+/*vracanje na vrh stranice(Narandzasti krug)*/
 #return-to-top {
     position: fixed;
     bottom: 20px;
@@ -102,16 +108,11 @@ h1,h2,h3,h4,h5
     height: 50px;
     display: block;
     text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
     border-radius: 35px;
     display: none;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+/*vracanje na vrh stranice(strelica)*/
 #return-to-top i {
     color: #fff;
     margin: 0;
@@ -119,12 +120,10 @@ h1,h2,h3,h4,h5
     left: 16px;
     top: 13px;
     font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
+/*hover preko strelice za vracanje na vrh stranice*/
 #return-to-top:hover {
     background: #ff6f00;
     cursor: pointer;
@@ -135,6 +134,7 @@ h1,h2,h3,h4,h5
     top: 5px;
 }
 
+/*Ucitavanje stranice(Bela Pozadina)*/
 .preloaderBg {
     position: fixed;
     z-index: 10; 
@@ -144,7 +144,7 @@ h1,h2,h3,h4,h5
     height: 100%;
     text-align: center;
 }
-
+/*Ucitavanje Stranice(Magento Logo)*/
 .preloader {
     margin: auto;
     margin-top: 15%;
@@ -155,7 +155,7 @@ h1,h2,h3,h4,h5
 
 }
 
-
+/*Ucitavanje stranice(Animacija)*/
 .preloader2 {
   border: 5px solid #f3f3f3;
   border-top: 5px solid #ff6f00;
@@ -173,6 +173,7 @@ h1,h2,h3,h4,h5
   100% { transform: rotate(360deg); }
 }
 
+ /* Koliko je skrolovana stranica(Narandzasta linija fiksirana na vrh)
 #_progress {
     --scroll: 0%;
     background: linear-gradient(to right, #ff6f00 var(--scroll),transparent 0);
@@ -181,8 +182,9 @@ h1,h2,h3,h4,h5
     height: 5px;
     top:0px;
     z-index: 100;
-}
+} */
 
+/*Magento logo (Konkurencija)*/
 .imgs
 {
     transition: box-shadow .5s;
@@ -195,6 +197,7 @@ h1,h2,h3,h4,h5
     box-shadow: 0 0 11px rgba(240, 61, 7, 0.5); 
 }
 
+/*Shopify Logo (Konkurencija)*/
 .imgm
 {
     transition: box-shadow .5s;
@@ -207,6 +210,7 @@ h1,h2,h3,h4,h5
     box-shadow: 0 0 11px rgba(81, 240, 7, 0.5); 
 }
 
+/*Bigcommerce Logo (Konkurencija)*/
 .imgb
 {
     transition: box-shadow .5s;
